@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>お問い合わせ | 株式会社白井</title>
+  <meta name="description" content="株式会社白井へのお問い合わせはこちらから。Webマーケティングに関するご相談を無料で承ります。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<header class="site-header scrolled">
+  <div class="container header-inner">
+    <a href="../index.html" class="logo">白井<span>.</span></a>
+    <nav class="global-nav">
+      <a href="../service/index.html">サービス</a>
+      <a href="../company/index.html">会社概要</a>
+      <a href="../contact/index.html">お問い合わせ</a>
+    </nav>
+    <div class="header-cta">
+      <a href="../contact/index.html" class="btn btn-primary btn-sm">無料相談する</a>
+      <button class="hamburger" aria-label="メニュー" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav">
+  <a href="../service/index.html">サービス</a>
+  <a href="../company/index.html">会社概要</a>
+  <a href="../contact/index.html">お問い合わせ</a>
+  <a href="../contact/index.html" class="btn btn-primary">無料相談する</a>
+</nav>
+
+<section class="page-hero">
+  <div class="container">
+    <div class="breadcrumb">
+      <a href="../index.html">HOME</a>
+      <i class="fa-solid fa-chevron-right"></i>
+      <span>お問い合わせ</span>
+    </div>
+    <span class="tag">Contact</span>
+    <h1>お問い合わせ</h1>
+    <p>Webマーケティングに関するご相談を無料で承ります。どんな小さなお悩みでもお気軽にどうぞ。</p>
+  </div>
+</section>
+
+<section class="section-pad" style="background:var(--bg);">
+  <div class="container">
+
+    <!-- 注意書き -->
+    <div class="form-wrap reveal" style="margin-bottom:40px;">
+      <div style="background:var(--bg-card);border:1px solid var(--border);border-radius:var(--radius);padding:24px 28px;font-size:.9rem;color:var(--muted);line-height:1.8;">
+        <p><i class="fa-solid fa-circle-info" style="color:var(--accent);margin-right:8px;"></i>通常2〜3営業日以内にご返信いたします。</p>
+        <p>お急ぎの場合は、お問い合わせ内容にその旨をご記入ください。</p>
+      </div>
+    </div>
+
+    <!-- フォーム -->
+    <form id="contact-form" class="form-wrap reveal" novalidate>
+      <div class="form-group">
+        <label for="company">会社名・屋号</label>
+        <input type="text" id="company" name="company" placeholder="例：株式会社〇〇">
+      </div>
+
+      <div class="form-group">
+        <label for="name">お名前 <span class="req">必須</span></label>
+        <input type="text" id="name" name="name" placeholder="例：山田 太郎" required>
+      </div>
+
+      <div class="form-group">
+        <label for="email">メールアドレス <span class="req">必須</span></label>
+        <input type="email" id="email" name="email" placeholder="例：info@example.com" required>
+      </div>
+
+      <div class="form-group">
+        <label for="tel">電話番号</label>
+        <input type="tel" id="tel" name="tel" placeholder="例：075-000-0000">
+      </div>
+
+      <div class="form-group">
+        <label for="industry">業種</label>
+        <select id="industry" name="industry">
+          <option value="">選択してください</option>
+          <option>飲食店・カフェ</option>
+          <option>美容・サロン</option>
+          <option>医療・クリニック</option>
+          <option>歯科医院</option>
+          <option>不動産</option>
+          <option>弁護士・法律事務所</option>
+          <option>税理士・会計事務所</option>
+          <option>EC・通販</option>
+          <option>建設・工務店</option>
+          <option>リフォーム</option>
+          <option>教育・スクール</option>
+          <option>フィットネス・ジム</option>
+          <option>整体・整骨院</option>
+          <option>ホテル・宿泊施設</option>
+          <option>その他</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">ご相談内容 <span class="req">必須</span></label>
+        <textarea id="message" name="message" placeholder="現在のお悩みや知りたいこと、ご相談内容を自由にご記入ください。" required></textarea>
+      </div>
+
+      <div class="form-group">
+        <label class="form-check">
+          <input type="checkbox" id="privacy-check">
+          <span><a href="../privacy/index.html" target="_blank">プライバシーポリシー</a>に同意します</span>
+        </label>
+      </div>
+
+      <div class="form-submit">
+        <button type="submit" class="btn btn-primary btn-lg">
+          <i class="fa-solid fa-paper-plane"></i> 送信する
+        </button>
+      </div>
+    </form>
+
+    <!-- 送信完了メッセージ -->
+    <div class="form-success form-wrap">
+      <i class="fa-solid fa-circle-check"></i>
+      <h3 style="color:#86efac;margin-bottom:8px;">送信が完了しました</h3>
+      <p style="color:var(--muted);">お問い合わせありがとうございます。<br>通常2〜3営業日以内にご返信いたします。</p>
+    </div>
+
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="../index.html" class="logo">白井<span>.</span></a>
+        <p>京都発・全国対応の総合Webマーケティング会社。</p>
+      </div>
+      <nav class="footer-nav">
+        <h4>サービス</h4>
+        <ul>
+          <li><a href="../service/seo.html">SEO対策</a></li>
+          <li><a href="../service/meo.html">MEO対策</a></li>
+          <li><a href="../service/aio.html">AIO対策</a></li>
+          <li><a href="../service/sns.html">SNS運用代行</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-nav">
+        <h4>会社情報</h4>
+        <ul>
+          <li><a href="../company/index.html">会社概要</a></li>
+          <li><a href="../contact/index.html">お問い合わせ</a></li>
+          <li><a href="../privacy/index.html">プライバシーポリシー</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <p>〒615-8016 京都府京都市西京区嵐山朝月町48-17</p>
+      <p>© 2026 株式会社白井 All Rights Reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="../js/main.js"></script>
+</body>
+</html>
