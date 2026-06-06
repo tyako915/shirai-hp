@@ -1,2 +1,7 @@
 page.html
 .claude/
+
+.vercel
+design_extracted/
+design_extracted.json
+design_raw.tar
